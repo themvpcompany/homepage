@@ -27,6 +27,11 @@ body {
     @include ease(1500ms);
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: $black;
+}
+
 #animation_break {
     height: 100vh;
     width: 140vw;
@@ -62,13 +67,13 @@ body {
     }
 
     &.active {
-        animation: swipeThrough 4s ease-in-out;
+        animation: swipeThrough 3s ease-in-out;
 
         &::after {
-            animation: swipeThroughAfter 4s ease-in-out;
+            animation: swipeThroughAfter 3s ease-in-out;
         }
         &::before {
-            animation: swipeThroughBefore 4s ease-in-out;
+            animation: swipeThroughBefore 3s ease-in-out;
         }
 
     }
@@ -81,7 +86,7 @@ body {
 
     > h1 {
         transform: translate3d(0,0,0);
-        animation: highlighter 2s ease-in-out;
+        animation: highlighter 1.2s ease-in-out;
         @include ease(200ms);
     }
 
@@ -159,7 +164,7 @@ nav {
     position: relative;
     visibility: hidden;
     border-bottom: 0.167em solid  $black;
-    animation: highlighter forwards 1.2s ease-in-out;
+    animation: highlighter forwards 0.6s ease-in-out;
 
     &::after {
         @include ease(128ms);
@@ -176,8 +181,8 @@ nav {
     }
 
     &:nth-of-type(1) { animation-delay: 0.5s; }
-    &:nth-of-type(2) { animation-delay: 0.9s; }
-    &:nth-of-type(3) { animation-delay: 1.3s; }
+    &:nth-of-type(2) { animation-delay: 0.8s; }
+    &:nth-of-type(3) { animation-delay: 1.1s; }
 
     &:hover {
         &::after {
